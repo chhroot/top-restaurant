@@ -1,24 +1,45 @@
+import createHomepage from "./home";
 
 
-function createHomepage() {
-    const contentDiv = document.createElement('div');
-  
-    const image = document.createElement('img');
-    image.src = "images/bg.jpg";
-    contentDiv.appendChild(image);
-  
-    const headline = document.createElement('h1');
-    headline.textContent = 'Welcome to Our Restaurant';
-    contentDiv.appendChild(headline);
-  
-    const copy = document.createElement('p');
-    copy.textContent = 'Our restaurant offers delicious food and a welcoming atmosphere. Come dine with us today!';
-    contentDiv.appendChild(copy);
+function createHeader() {
+  const header = document.createElement("div")
+  header.classList.add("header")
 
-    return contentDiv;
+}
+
+function createNav() {
+  const nav = document.createElement("div");
+
+  const home = document.createElement("button");
+  home.classList.add("home-button");
+  // home.textContent("HOME");
+
+
+  // const menu = document.createElement("button")
+  // menu.classList.add("menu-button")
+  // menu.textContent("menu")
+
+  // const contact = document.createElement("button")
+  // contact.classList.add("contact-button")
+  // contact.textContent("contact")
+
+  // nav.appendChild(home)
+  // nav.appendChild(menu)
+  // nav.appendChild(contact)
+
+  return nav
+}
+
+function createMain() {
+    const main = document.createElement("div");
+    main.classList.add("main");
+    main.setAttribute("id", "main");
+    return main;
   }
 
 export default function initalizeWebsite() {
   const content = document.querySelector('#content');
+  // content.appendChild(createMain());
+  content.appendChild(createNav());
   content.appendChild(createHomepage());
 }
