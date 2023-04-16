@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+/* NAVIGATION BAR */
+.logo{
+    display: inline-block;
+    font-family: 'Leckerli One', cursive;
+    color: #f2f2f2;
+    margin-left: 10px;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }

@@ -1,19 +1,22 @@
 function createContact() {
-    const contact = document.createElement('div')
-    contact.classList.add('contact')
-
-    const phoneNumber = document.createElement('p')
-    phoneNumber.classList.add('phone')
-    phoneNumber.textContent = "455 343 323"
-
-    const address = document.createElement('p')
-    address.classList.add('address')
-    address.textContent = "Diagon Alley 56, London, UK"
-
-    contact.appendChild(phoneNumber)
-    contact.appendChild(address)
+    const content = document.querySelector("#content");
     
-    return contact;
+
+    const pageContent = document.createElement('div');
+    pageContent.classList.add('page-content');
+
+    const phoneNumber = document.createElement('p');
+    phoneNumber.classList.add('phone');
+    phoneNumber.textContent = "455 343 323";
+
+    const address = document.createElement('p');
+    address.classList.add('address');
+    address.textContent = "Diagon Alley 56, London, UK";
+
+    pageContent.appendChild(phoneNumber);
+    pageContent.appendChild(address);
+
+    content.appendChild(pageContent);
 
 }
 

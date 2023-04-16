@@ -1,3 +1,3 @@
-import initalizeWebsite from './homepage.js';
+import pageLoad from './pageLoad.js';
 
-initalizeWebsite();
+pageLoad();
